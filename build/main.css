@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #FDA7DF;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background-color: #5758BB;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header h1 {
+  color: #9980FA;
+  font-family: "Kalam", cursive;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  font-weight: bold;
+  margin-left: 24px;
+}
+.menu a {
+  color: #9980FA;
+  text-decoration: none;
+}
+
+section {
+  padding: 56px 0;
+}
+section .container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+section .container h2 {
+  font-family: "Kalam", cursive;
+  text-align: center;
+}
+section .products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+section .products .product-item {
+  width: 70%;
+  border-radius: 16px;
+  border: 1px solid black;
+  background-color: antiquewhite;
+}
+section .products .product-item img {
+  margin: 5%;
+  width: 90%;
+}
+section .products .product-item h4 {
+  text-align: center;
+  font-family: "Kalam", cursive;
+}
+section .products .product-item p {
+  text-align: center;
+}
+section .products .product-item .product-button {
+  display: block;
+  background-color: #9980FA;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+  color: black;
+  margin-left: 30%;
+}
+section .products .product-item .product-button:hover {
+  background-color: #5758BB;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .products {
+    display: block;
+  }
+  .product-item {
+    margin-bottom: 32px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
